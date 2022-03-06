@@ -9,6 +9,7 @@ public class Obra {
 	private float edicao;
 	private String autor;
 	private float valor;
+	private String texto;
 	
 	//gets e sets:
 	public int getId() {
@@ -47,6 +48,13 @@ public class Obra {
 	public void setValor(float valor) {
 		this.valor = valor;
 	}
+	public String getTexto() {
+		return texto;
+	}
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+	
 	
 	
 

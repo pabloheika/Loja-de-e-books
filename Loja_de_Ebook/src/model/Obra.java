@@ -6,7 +6,7 @@ public class Obra {
 	private int id;
 	private String titulo;
 	private String editora;
-	private float edicao;
+	private int edicao;
 	private String autor;
 	private float valor;
 	private String texto;
@@ -30,10 +30,10 @@ public class Obra {
 	public void setEditora(String editora) {
 		this.editora = editora;
 	}
-	public float getEdicao() {
+	public int getEdicao() {
 		return edicao;
 	}
-	public void setEdicao(float edicao) {
+	public void setEdicao(int edicao) {
 		this.edicao = edicao;
 	}
 	public String getAutor() {
@@ -53,6 +53,11 @@ public class Obra {
 	}
 	public void setTexto(String texto) {
 		this.texto = texto;
+	}
+	@Override
+	public String toString() {
+		return "========== " + titulo + " ==========\n Editora " + editora + "\n " + edicao +"ª edição \n autor " + autor
+				+ "\n\n\n" + texto ;
 	}
 	
 	

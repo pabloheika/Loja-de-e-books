@@ -8,7 +8,7 @@ public class Obra {
 	private String editora;
 	private int edicao;
 	private String autor;
-	private float valor;
+	private double valor;
 	private String texto;
 	
 	//gets e sets:
@@ -42,11 +42,11 @@ public class Obra {
 	public void setAutor(String autor) {
 		this.autor = autor;
 	}
-	public float getValor() {
+	public double getValor() {
 		return valor;
 	}
-	public void setValor(float valor) {
-		this.valor = valor;
+	public void setValor(double d) {
+		this.valor = d;
 	}
 	public String getTexto() {
 		return texto;

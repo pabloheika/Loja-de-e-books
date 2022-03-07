@@ -55,12 +55,11 @@ public class Obra {
 		this.texto = texto;
 	}
 	@Override
+	//Metodo para ler o livro
 	public String toString() {
 		return "========== " + titulo + " ==========\n Editora " + editora + "\n " + edicao +"ª edição \n autor " + autor
 				+ "\n\n\n" + texto ;
-	}
-	
-	
+	}	
 	
 
 }

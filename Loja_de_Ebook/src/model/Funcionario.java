@@ -4,7 +4,7 @@ public class Funcionario extends Pessoa {
 	
 	//atributos
 	private String cargo;
-	private long salario;
+	private double salario;
 
 	
 	//gets e sets:
@@ -16,11 +16,11 @@ public class Funcionario extends Pessoa {
 		this.cargo = cargo;
 	}
 	
-	public long getSalario() {
+	public double getSalario() {
 		return salario;
 	}
 
-	public void setSalario(long salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
 

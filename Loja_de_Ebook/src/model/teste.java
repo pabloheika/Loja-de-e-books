@@ -6,6 +6,7 @@ public class teste {
 	static Obra o2 = new Obra();
 	static Obra o3 = new Obra();
 	static Obra o4 = new Obra();
+	
 	public static void main(String[] args) {
 		//atribui os dados dos objetos
 		o1.setAutor("");

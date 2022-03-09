@@ -48,5 +48,5 @@ public class Venda {
 	//Metodo para ler o livro
 	public String toString() {
 		return "id da venda: " + id + "\nMetodo de Pagamento: " + metodoPagamento + "\nCPF: " + leitor.getCpf() +"\nNome: " + leitor.getNome() + "\nID da Obra: " + obra.getId() + "\nObra" + obra.getTitulo();
-	
+	}
 }

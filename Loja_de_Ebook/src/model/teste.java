@@ -11,10 +11,7 @@ public class teste {
 	static Funcionario func1 = new Funcionario();
 	static Funcionario func2 = new Funcionario();
 	
-<<<<<<< Upstream, based on origin/main
-=======
-	
->>>>>>> 8fb30d8 atualização testes
+
 	public static void main(String[] args) {
 		//atribui os dados dos objetos
 		o1.setAutor("Irm�os Grimm");
@@ -215,6 +212,9 @@ public class teste {
 		
 		System.out.println(o1.toString());
 		System.out.println(o2.toString());
+		System.out.println(func2.toString());
+		System.out.println(leitor1.toString());
+		System.out.println(leitor2.toString());
 		
 	}
 

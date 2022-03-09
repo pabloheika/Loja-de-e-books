@@ -215,7 +215,7 @@ public class teste {
 		System.out.println(func2.toString());
 		System.out.println(leitor1.toString());
 		System.out.println(leitor2.toString());
-		
+		System.out.println(ven1.toString());
 	}
 
 }

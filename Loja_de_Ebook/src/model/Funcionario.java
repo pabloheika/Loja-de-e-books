@@ -17,6 +17,6 @@ public class Funcionario extends Pessoa {
 	//Metodo para ler o livro
 	public String toString() {
 		return "Cargo: " + cargo + "\nCPF: " + getCpf() + "\nNome: " + getNome() +"\nEmail: " + getEmail()
-				+ "\nEmail";
+		+"\n";
 	}
 }

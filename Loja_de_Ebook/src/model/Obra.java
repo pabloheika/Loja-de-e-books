@@ -57,8 +57,8 @@ public class Obra {
 	@Override
 	//Metodo para ler o livro
 	public String toString() {
-		return "========== " + titulo + " ==========\n Editora " + editora + "\n " + edicao +"ª edição \n Autor " + autor
-				+ "\n\n\n" + texto ;
+		return "========== " + titulo + " ==========\n\n Editora " + editora + "\n " + edicao +"ª edição \n Autor " + autor
+				+ "\n\n\n" + texto +"\n";
 	}	
 	
 

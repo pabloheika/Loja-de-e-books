@@ -13,7 +13,7 @@ public class teste {
 	
 
 	public static void main(String[] args) {
-		//atribui os dados dos objetos
+		//atribui os dados dos objetos:
 		o1.setAutor("Irmãos Grimm");
 		o1.setEdicao(1);
 		o1.setEditora("Rocco");
@@ -209,6 +209,8 @@ public class teste {
 		
 		Venda ven1 = new Venda(0,"credito",leitor2, o1);
 		Venda ven2 = new Venda(1,"credito",leitor1, o2);
+		
+		//testando o metodo toString com os objetos criados
 		
 		System.out.println(o1.toString());
 		System.out.println(o2.toString());

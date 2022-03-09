@@ -2,7 +2,7 @@ package model;
 
 public class Obra {
 	
-	//Atributos:
+	//Atributos de obra
 	private int id;
 	private String titulo;
 	private String editora;
@@ -54,6 +54,7 @@ public class Obra {
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
+	
 	@Override
 	//Metodo para ler o livro
 	public String toString() {

@@ -2,12 +2,13 @@ package model;
 
 public class Venda {
 	
-	//atributos
+	//atributos de venda
 	private int id;
 	private String metodoPagamento;
 	private Leitor leitor;
 	private Obra obra;
 	
+	//construtor da classe venda
 	public Venda (int id, String metodoPagamento, Leitor leitor, Obra obra) {
 		this.id = id;
 		this.metodoPagamento = metodoPagamento;
@@ -28,24 +29,21 @@ public class Venda {
 	public void setMetodoPagamento(String metodoPagamento) {
 		this.metodoPagamento = metodoPagamento;
 	}
-
 	public Leitor getLeitor() {
 		return leitor;
 	}
-
 	public void setLeitor(Leitor leitor) {
 		this.leitor = leitor;
 	}
-
 	public Obra getObra() {
 		return obra;
 	}
-
 	public void setObra(Obra obra) {
 		this.obra = obra;
 	}
+	
 	@Override
-	//Metodo para ler o livro
+	//Metodo para exibir os dados da venda
 	public String toString() {
 		return "id da venda: " + id + "\nMetodo de Pagamento: " + metodoPagamento + "\nCPF: " + leitor.getCpf() +"\nNome: " + leitor.getNome() + "\nID da Obra: " + obra.getId() + "\nObra" + obra.getTitulo();
 	}

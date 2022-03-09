@@ -16,7 +16,7 @@ public class Funcionario extends Pessoa {
 	@Override
 	//Metodo para ler o livro
 	public String toString() {
-		return "Cargo: " + cargo + "\nCPF: " + cpf + "\nNome: " + nome +"\nEmail: " + email
+		return "Cargo: " + cargo + "\nCPF: " + getCpf() + "\nNome: " + getNome() +"\nEmail: " + getEmail()
 				+ "\nEmail";
 	}
 }

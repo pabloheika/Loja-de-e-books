@@ -207,10 +207,12 @@ public class teste {
 		func2.setNome("Luis Rocha Castro");
 		func2.setSenha("Luisrochasenha1234");
 		
+		//inicia objetos de venda
+		
 		Venda ven1 = new Venda(0,"credito",leitor2, o1);
 		Venda ven2 = new Venda(1,"credito",leitor1, o2);
 		
-		//testando o metodo toString com os objetos criados
+		//testando o metodo toString dos objetos criados
 		
 		System.out.println(o1.toString());
 		System.out.println(o2.toString());

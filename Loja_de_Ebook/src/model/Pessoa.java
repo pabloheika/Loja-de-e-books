@@ -2,7 +2,7 @@ package model;
 
 public abstract class Pessoa {
 	
-	//atributos
+	//atributos de pessoa
 	private long cpf;
 	private String nome;
 	private String email;
@@ -33,6 +33,4 @@ public abstract class Pessoa {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	
-	
 }

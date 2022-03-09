@@ -10,8 +10,6 @@ public class teste {
 	static Funcionario func1 = new Funcionario();
 	static Funcionario func2 = new Funcionario();
 	
-	static
-	
 	public static void main(String[] args) {
 		//atribui os dados dos objetos
 		o1.setAutor("");

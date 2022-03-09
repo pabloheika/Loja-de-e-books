@@ -13,4 +13,10 @@ public class Funcionario extends Pessoa {
 	public void setCargo(String cargo) {
 		this.cargo = cargo;
 	}
+	@Override
+	//Metodo para ler o livro
+	public String toString() {
+		return "Cargo: " + cargo + "\nCPF: " + cpf + "\nNome: " + nome +"\nEmail: " + email
+				+ "\nEmail";
+	}
 }

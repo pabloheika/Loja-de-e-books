@@ -233,7 +233,7 @@ public class Dados {
 					+ " e assustado, nunca mais voltou a molestar os porquinhos.\r\n" + "\r\n"
 					+ "E quanto aos porquinhos, aprenderam a lição de que tudo o que é feito com esforço tem melhor \n"
 					+ "resultado. Os três porquinhos decidiram morar juntos e todos viveram felizes e harmonia.");
-			o2.setTitulo("Os três porquinos");
+			o2.setTitulo("Os três porquinos"+ i);
 			o2.setValor(5.5 + i);
 			addObra(o2);
 

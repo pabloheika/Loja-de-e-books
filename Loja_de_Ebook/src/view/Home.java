@@ -29,7 +29,7 @@ public class Home implements ActionListener {
 	
 	painel.setLayout(null); //Define sem Layout
 	painel.setVisible(true); //Deixa ele visivel na tela
-	painel.setBackground(Color.gray); //poem a cor de traz da tela de azul(cyan)
+	painel.setBackground(Color.gray); //poem a cor de traz da tela de cinza
 	
 	
 	botaoLogin.setBounds(1000, 20, 100, 30); //define o tamanho e o botao ira aparecer na tela
@@ -63,7 +63,7 @@ public class Home implements ActionListener {
 			new Login();
 		
 		if(src == botaoCadastro)
-			new Login();
+			new TelaCadastra();
 		
 		
 	}

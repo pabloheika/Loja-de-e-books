@@ -10,7 +10,6 @@ public class Login {
 		
 		JFrame frame1 = new JFrame("Login"); //cria o JFrame
 		frame1.setSize(300, 250); //define o tamanho do JFrame
-		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //termina a aplicação se fechar o app
 		frame1.setLocationRelativeTo(null); //coloca a tela no meio
 		
 		JPanel telaLogin = new JPanel(); //cria o Jpanel

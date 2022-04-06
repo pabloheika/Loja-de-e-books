@@ -4,9 +4,9 @@ import java.awt.*;
 
 import javax.swing.*;
 
-public class Menu {
+public class Home {
 	
-	public Menu() {
+	public Home() {
 		
 	JFrame frame = new JFrame("Menu"); //cria o JFrame
 	frame.setSize(1250, 650); //define o tamanho do JFrame

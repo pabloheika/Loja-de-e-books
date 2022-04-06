@@ -12,7 +12,7 @@ public class teste {
 	static Funcionario func2 = new Funcionario();
 	
 
-	public static void main(String[] args) {
+	public static void testModel() {
 		//atribui os dados dos objetos:
 		o1.setAutor("Irmãos Grimm");
 		o1.setEdicao(1);

@@ -69,7 +69,7 @@ public class AreaLeitor extends JFrame {
 		texName.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
 		texName.setForeground(new java.awt.Color(255, 255, 255));
 		texName.setHorizontalAlignment(SwingConstants.RIGHT);
-		texName.setText("Name");
+		texName.setText(l.getNome());
 		pMae.add(texName);
 		texName.setBounds(413, 15, 251, 14);
 

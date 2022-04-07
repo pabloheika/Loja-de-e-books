@@ -1,7 +1,5 @@
 package model;
-
 import java.util.ArrayList;
-
 /** 
  * classe que contem os dados, contem as listas com todos os objetos
  * 
@@ -9,7 +7,6 @@ import java.util.ArrayList;
  * @author Pablo S. Costa
  * 
  */
-
 public class Dados {
 
 	ArrayList<Obra> obras = new ArrayList<Obra>();
@@ -48,7 +45,8 @@ public class Dados {
 	public void setFuncionarios(ArrayList<Funcionario> funcionarios) {
 		this.funcionarios = funcionarios;
 	}
-
+	
+	
 	public Obra editaObra(Obra o, String autor, int edicao, String editora, int id, String texto, String titulo,
 			double valor) {
 		o.setAutor(autor);
@@ -265,8 +263,7 @@ public class Dados {
 
 			Venda ven2 = new Venda(1 + i, "credito", leitor2, o2);
 			addVenda(ven2);
-		}
-		;
+		};
 
 	}
 

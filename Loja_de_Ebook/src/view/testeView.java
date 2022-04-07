@@ -7,6 +7,8 @@ public class testeView {
 	//new Home();
 	//new Login();
 	//new TelaCadastraFuncionario();
+		
+	//new TelaCadastra();
 
 	//}
 

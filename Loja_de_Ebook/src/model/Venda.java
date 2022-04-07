@@ -1,14 +1,26 @@
 package model;
-
+/** 
+ * classe que contem dados de Venda
+ * 
+ * @author João Vítor
+ * @author Pablo S. Costa
+ * 
+ */
 public class Venda {
 	
-	//atributos de venda
 	private int id;
 	private String metodoPagamento;
 	private Leitor leitor;
 	private Obra obra;
+	/**
+	 * metodo construtor de Venda, cria uma nova venda
+	 * 
+	 * @param id                um numero que identifica a venda
+	 * @param metodoPagamento   o metodo de pagamento do cliente
+	 * @param leitor            o cliente em si
+	 * @param obra              a obra que esta sendo vendida
+	 */
 	
-	//construtor da classe venda
 	public Venda (int id, String metodoPagamento, Leitor leitor, Obra obra) {
 		this.id = id;
 		this.metodoPagamento = metodoPagamento;
@@ -16,7 +28,6 @@ public class Venda {
 		this.obra = obra;
 	}
 	
-	//gets e sets:
 	public int getId() {
 		return id;
 	}
@@ -43,7 +54,9 @@ public class Venda {
 	}
 	
 	@Override
-	//Metodo para exibir os dados da venda
+	/**
+	 * metodo para exibir a venda
+	 */
 	public String toString() {
 		return "id da venda: " + id + "\nMetodo de Pagamento: " + metodoPagamento + "\nCPF: " + leitor.getCpf() +"\nNome: " + leitor.getNome() + "\nID da Obra: " + obra.getId() + "\nObra: " + obra.getTitulo()+"\n";
 	}

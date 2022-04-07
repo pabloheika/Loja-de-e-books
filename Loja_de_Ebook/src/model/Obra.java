@@ -1,8 +1,13 @@
 package model;
-
+/** 
+ * classe que contem dados de Obra
+ * 
+ * @author João Vítor
+ * @author Pablo S. Costa
+ * 
+ */
 public class Obra {
 	
-	//Atributos de obra
 	private int id;
 	private String titulo;
 	private String editora;
@@ -11,7 +16,6 @@ public class Obra {
 	private double valor;
 	private String texto;
 	
-	//gets e sets:
 	public int getId() {
 		return id;
 	}
@@ -56,7 +60,9 @@ public class Obra {
 	}
 	
 	@Override
-	//Metodo para ler o livro
+	/**
+	 * metodo para exibir a obra
+	 */
 	public String toString() {
 		return "========== " + titulo + " ==========\n\n Editora " + editora + "\n " + edicao +"ª edição \n Autor " + autor
 				+ "\n\n\n" + texto +"\n";

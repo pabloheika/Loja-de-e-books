@@ -1,14 +1,18 @@
 package model;
-
+/** 
+ * classe abstrata que contem dados de Pessoa
+ * 
+ * @author João Vítor
+ * @author Pablo S. Costa
+ * 
+ */
 public abstract class Pessoa {
 	
-	//atributos de pessoa
 	private long cpf;
 	private String nome;
 	private String email;
 	private String senha;
 	
-	//gets e sets
 	public long getCpf() {
 		return cpf;
 	}

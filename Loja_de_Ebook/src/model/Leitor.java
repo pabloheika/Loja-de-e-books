@@ -1,13 +1,16 @@
 package model;
-
-//leitor herda de pessoa
+/** 
+ * classe que contem dados de Leitor
+ * Classe filha de Pessoa
+ * 
+ * @author João Vítor
+ * @author Pablo S. Costa
+ * 
+ */
 public class Leitor extends Pessoa{
 	
-	//atributos de leitor
 	private String dataNascimento;
 
-	
-	//gets e sets:
 	public String getDataNascimento() {
 		return dataNascimento;
 	}
@@ -16,7 +19,9 @@ public class Leitor extends Pessoa{
 	}
 	
 	@Override
-	//Metodo para exibir os dados do leitor(menos a senha)
+	/**
+	 * metodo para exibir os dados do leitor
+	 */
 	public String toString() {
 		return "\nCPF: " + getCpf() + "\nNome: " + getNome() + "\nData de Nascimento: " + dataNascimento + "\nEmail: " + getEmail()
 				 +"\n";

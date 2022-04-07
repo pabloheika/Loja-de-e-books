@@ -1,12 +1,16 @@
 package model;
-
-//funcionario herda de pessoa
+/** 
+ * classe que contem dados do Funcionario.
+ * Classe filha de Pessoa
+ * 
+ * @author João Vítor
+ * @author Pablo S. Costa
+ * 
+ */
 public class Funcionario extends Pessoa {
 	
-	//atributos de funcionario
 	private String cargo;
 
-	//gets e sets:
 	public String getCargo() {
 		return cargo;
 	}
@@ -15,7 +19,10 @@ public class Funcionario extends Pessoa {
 	}
 	
 	@Override
-	//Metodo para exibir os dados do funcionario(menos senha)
+	/**
+	 * Metodo para exibir os dados do Funcionario
+	 * 
+	 */
 	public String toString() {
 		return "Cargo: " + cargo + "\nCPF: " + getCpf() + "\nNome: " + getNome() +"\nEmail: " + getEmail()
 		+"\n";

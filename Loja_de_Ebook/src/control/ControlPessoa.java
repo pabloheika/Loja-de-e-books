@@ -49,15 +49,18 @@ public class ControlPessoa {
 		
 		return false;
 	}
-	public Leitor pegaLeitor(Long cpf) {
+	public Leitor buscaLeitor(long cpf){
+		System.out.print("entrou" );
 		for (int i = 0; i < l.size(); i++) {
+			System.out.print("checando" );
 			if(l.get(i).getCpf() == cpf) {
+				System.out.print("Pegou" );
 				return l.get(i);
 			}
-		}
-		return null;
+		}System.out.print("foise" );
+		return l.get(0);
 	}
-	public Funcionario pegaFuncionario(Long cpf) {
+	public Funcionario pegaFuncionario(long cpf){
 		for (int i = 0; i < f.size(); i++) {
 			if(f.get(i).getCpf() == cpf) {
 				return f.get(i);

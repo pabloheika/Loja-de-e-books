@@ -165,10 +165,10 @@ public class Login extends JFrame {
 
 	private void bEntraActionPerformed(java.awt.event.ActionEvent evt) {
 		if (tro) {
-			System.out.println(Long.parseLong(campoCpf.getText()) + campoSenha.getText());
-			System.out.println(p.validaLogin(tro, Long.parseLong(campoCpf.getText()), campoSenha.getText()));
+			
 			if(p.validaLogin( tro , Long.parseLong(campoCpf.getText()), campoSenha.getText())) {
-				new AreaLeitor(p.pegaLeitor(Long.parseLong(campoCpf.getText())), h).setVisible(true);
+				System.out.print( p.buscaLeitor(Long.parseLong(campoCpf.getText())).getDataNascimento());
+				new AreaLeitor(p.buscaLeitor(Long.parseLong(campoCpf.getText())), h).setVisible(true);
 				h.invisivel();
 				this.dispose();
 				

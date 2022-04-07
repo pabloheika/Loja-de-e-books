@@ -24,18 +24,20 @@ public class AreaLeitor extends JFrame {
 	private JLabel texName;
 	private Leitor l;
 	private Home h;
+	private Perfil p;
 
 	/**
 	 * Creates new form AreaLeitor
 	 */
 	public AreaLeitor(Leitor user, Home home) {
-		initComponents();
 		l = user;
 		h = home;
+		initComponents();
+		System.out.println(l.getCpf() + l.getNome() );
 	}
 
 	private void initComponents() {
-
+		
 		pMae = new JPanel();
 		bSair = new JButton();
 		texName = new JLabel();
@@ -145,12 +147,22 @@ public class AreaLeitor extends JFrame {
 	}
 
 	private void bPerfilActionPerformed(java.awt.event.ActionEvent evt) {
-		// TODO add your handling code here:
+		p = new Perfil(l, this);
+		pInterno.setVisible(false);
+		p.setLayout(null);
+		pFilho.add(p);
+		p.setBounds(0, 0, 770, 293);
+		p.setVisible(true);
+		
 	}
 
 	private void bSairActionPerformed(java.awt.event.ActionEvent evt) {
 		h.visivel();
 		this.dispose();
+	}
+	public void fechaPerfil() {
+		p.setVisible(false);
+		pInterno.setVisible(true);
 	}
 
 	

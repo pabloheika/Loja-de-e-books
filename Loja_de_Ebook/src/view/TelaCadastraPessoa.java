@@ -353,7 +353,7 @@ public class TelaCadastraPessoa extends JFrame {
 						JOptionPane.ERROR_MESSAGE);
 			}
 		} else {
-
+//checar resultado obtido em senha e cargo
 			if (dados.checaCpf(Long.parseLong(campoCpf.getText()), opera)) {
 				res = dados.cadastraPessoa(campoCpf.getText(), Long.parseLong(campoCpf.getText()), campoEmail.getText(),
 						campoSenha.getText(), "" + selectCargo.getModel(), opera);

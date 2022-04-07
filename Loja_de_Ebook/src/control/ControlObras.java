@@ -10,13 +10,13 @@ public class ControlObras {
 	public ControlObras(ControlDados d) {
 		this.o = d.getObras();
 	}
-	
+
 	public String[] getNomeObra() {
 		String[] s = new String[o.size()];
-		for(int i = 0; i < o.size(); i++) {
+		for (int i = 0; i < o.size(); i++) {
 			s[i] = o.get(i).getTitulo();
 		}
-		
+
 		return s;
 	}
 

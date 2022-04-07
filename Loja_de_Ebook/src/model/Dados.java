@@ -1,6 +1,8 @@
 package model;
+
 import java.util.ArrayList;
-/** 
+
+/**
  * classe que contem os dados, contem as listas com todos os objetos
  * 
  * @author João Vítor
@@ -45,8 +47,7 @@ public class Dados {
 	public void setFuncionarios(ArrayList<Funcionario> funcionarios) {
 		this.funcionarios = funcionarios;
 	}
-	
-	
+
 	public Obra editaObra(Obra o, String autor, int edicao, String editora, int id, String texto, String titulo,
 			double valor) {
 		o.setAutor(autor);
@@ -90,6 +91,7 @@ public class Dados {
 	public void removeVenda(Venda v) {
 		vendas.remove(v);
 	}
+
 	public void cadastraLeitor(String nome, long cpf, String email, String senha, String data) {
 		Leitor leitor1 = new Leitor();
 		leitor1.setCpf(cpf);
@@ -99,6 +101,7 @@ public class Dados {
 		leitor1.setSenha(senha);
 		addLeitor(leitor1);
 	}
+
 	public void cadastraFuncionario(String nome, long cpf, String email, String senha, String cargo) {
 		Funcionario leitor1 = new Funcionario();
 		leitor1.setCpf(cpf);
@@ -257,13 +260,14 @@ public class Dados {
 					+ " e assustado, nunca mais voltou a molestar os porquinhos.\r\n" + "\r\n"
 					+ "E quanto aos porquinhos, aprenderam a lição de que tudo o que é feito com esforço tem melhor \n"
 					+ "resultado. Os três porquinhos decidiram morar juntos e todos viveram felizes e harmonia.");
-			o2.setTitulo("Os três porquinos"+ i);
+			o2.setTitulo("Os três porquinos" + i);
 			o2.setValor(5.5 + i);
 			addObra(o2);
 
 			Venda ven2 = new Venda(1 + i, "credito", leitor2, o2);
 			addVenda(ven2);
-		};
+		}
+		;
 
 	}
 

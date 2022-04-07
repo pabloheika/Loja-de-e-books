@@ -123,6 +123,7 @@ public class AreaLeitor extends JFrame {
 		pMae.setBounds(0, 0, 770, 380);
 
 		pack();
+		setLocationRelativeTo(null);
 	}
 
 	private void bBibliActionPerformed(java.awt.event.ActionEvent evt) {

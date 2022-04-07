@@ -11,6 +11,10 @@ import javax.swing.*;
  */
 public class Login extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JButton bEntra;
 	private JButton bTroca;
 	private JTextField campoCpf;
@@ -133,6 +137,7 @@ public class Login extends JFrame {
 		pLogin.setBounds(0, 0, 400, 300);
 
 		pack();
+		setLocationRelativeTo(null);
 	}
 
 	private void bTrocaActionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,7 +155,12 @@ public class Login extends JFrame {
 	}
 
 	private void bEntraActionPerformed(java.awt.event.ActionEvent evt) {
+		if (tro) {
+			
 
+		} else {
+			;
+		}
 	}
 
 }

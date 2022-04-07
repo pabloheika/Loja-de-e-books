@@ -68,7 +68,7 @@ public class Home implements ActionListener {
 		Object src = e.getSource();
 
 		if (src == botaoLogin)
-			new Login();
+			new Login().setVisible(true);
 
 		if (src == botaoCadastro) {
 			t = new TelaCadastraPessoa(d, home);

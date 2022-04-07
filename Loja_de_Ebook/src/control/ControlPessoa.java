@@ -30,5 +30,40 @@ public class ControlPessoa {
 
 		return s;
 	}
+	
+	public boolean validaLogin(boolean tipo, long cpf, String senha) {
+		if(tipo) {
+			for (int i = 0; i < l.size(); i++) {
+				if(l.get(i).getCpf() == cpf && l.get(i).getSenha() == senha) {
+					return true;
+				}
+			}
+			
+		}else {
+			for (int i = 0; i < f.size(); i++) {
+				if(f.get(i).getCpf() == cpf && f.get(i).getSenha() == senha) {
+					return true;
+				}
+			}
+		}
+		
+		return false;
+	}
+	public Leitor pegaLeitor(Long cpf) {
+		for (int i = 0; i < l.size(); i++) {
+			if(l.get(i).getCpf() == cpf) {
+				return l.get(i);
+			}
+		}
+		return null;
+	}
+	public Funcionario pegaFuncionario(Long cpf) {
+		for (int i = 0; i < f.size(); i++) {
+			if(f.get(i).getCpf() == cpf) {
+				return f.get(i);
+			}
+		}
+		return null;
+	}
 
 }

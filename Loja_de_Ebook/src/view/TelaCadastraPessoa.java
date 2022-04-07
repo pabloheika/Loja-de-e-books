@@ -106,7 +106,7 @@ public class TelaCadastraPessoa extends JFrame {
 		botaoCancela.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 		botaoCancela.setForeground(new java.awt.Color(153, 0, 0));
 		botaoCancela.setText("Cancelar");
-
+		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
 		jPanel1.setLayout(jPanel1Layout);
 		jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -245,7 +245,7 @@ public class TelaCadastraPessoa extends JFrame {
 		botaoCancela.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 		botaoCancela.setForeground(new java.awt.Color(153, 0, 0));
 		botaoCancela.setText("Cancelar");
-
+		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		selectCargo.setModel(
 				new DefaultComboBoxModel<>(new String[] { "Administrador", "Gerente", "Desenvolvedor", "Atendente" }));
 

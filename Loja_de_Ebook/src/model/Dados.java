@@ -2,6 +2,14 @@ package model;
 
 import java.util.ArrayList;
 
+/** 
+ * classe que contem os dados, contem as listas com todos os objetos
+ * 
+ * @author João Vítor
+ * @author Pablo S. Costa
+ * 
+ */
+
 public class Dados {
 
 	ArrayList<Obra> obras = new ArrayList<Obra>();
@@ -83,6 +91,24 @@ public class Dados {
 
 	public void removeVenda(Venda v) {
 		vendas.remove(v);
+	}
+	public void cadastraLeitor(String nome, long cpf, String email, String senha, String data) {
+		Leitor leitor1 = new Leitor();
+		leitor1.setCpf(cpf);
+		leitor1.setDataNascimento(data);
+		leitor1.setEmail(email);
+		leitor1.setNome(nome);
+		leitor1.setSenha(senha);
+		addLeitor(leitor1);
+	}
+	public void cadastraFuncionario(String nome, long cpf, String email, String senha, String cargo) {
+		Funcionario leitor1 = new Funcionario();
+		leitor1.setCpf(cpf);
+		leitor1.setCargo(cargo);
+		leitor1.setEmail(email);
+		leitor1.setNome(nome);
+		leitor1.setSenha(senha);
+		addFuncionario(leitor1);
 	}
 
 	public void geraDados() {

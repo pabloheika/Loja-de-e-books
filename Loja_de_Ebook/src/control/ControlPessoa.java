@@ -34,14 +34,14 @@ public class ControlPessoa {
 	public boolean validaLogin(boolean tipo, long cpf, String senha) {
 		if(tipo) {
 			for (int i = 0; i < l.size(); i++) {
-				if(l.get(i).getCpf() == cpf && l.get(i).getSenha() == senha) {
+				if(l.get(i).getCpf() == cpf && senha.equals(l.get(i).getSenha())) {
 					return true;
 				}
 			}
 			
 		}else {
 			for (int i = 0; i < f.size(); i++) {
-				if(f.get(i).getCpf() == cpf && f.get(i).getSenha() == senha) {
+				if(f.get(i).getCpf() == cpf && senha.equals(f.get(i).getSenha())) {
 					return true;
 				}
 			}

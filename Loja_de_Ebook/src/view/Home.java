@@ -50,7 +50,12 @@ public class Home implements ActionListener {
 		frame.setVisible(true); // deixa o JFrame visivel
 
 	}
-
+	public void invisivel() {
+		frame.setVisible(false); 
+	}
+	public void visivel() {
+		frame.setVisible(true); 
+	}
 	public void fechaCadastroPessoa() {
 
 		t.dispose();
@@ -68,7 +73,7 @@ public class Home implements ActionListener {
 		Object src = e.getSource();
 
 		if (src == botaoLogin)
-			new Login().setVisible(true);
+			new Login(d, home).setVisible(true);
 
 		if (src == botaoCadastro) {
 			t = new TelaCadastraPessoa(d, home);

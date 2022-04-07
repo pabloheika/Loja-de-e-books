@@ -5,6 +5,9 @@ import java.awt.event.KeyListener;
 
 import javax.swing.*;
 
+import control.ControlDados;
+import control.ControlPessoa;
+
 /**
  *
  * @author pablo
@@ -26,9 +29,15 @@ public class Login extends JFrame {
 	private JLabel texSenha;
 	private JLabel texTitulo;
 	private boolean tro = true;
+	private ControlDados d;
+	private ControlPessoa p;
+	private Home h;
 
-	public Login() {
+	public Login(ControlDados dados, Home home) {
 		initComponents();
+		d = dados;
+		p = new ControlPessoa(d);
+		h = home;
 	}
 
 	private void initComponents() {
@@ -156,10 +165,27 @@ public class Login extends JFrame {
 
 	private void bEntraActionPerformed(java.awt.event.ActionEvent evt) {
 		if (tro) {
-			
+			System.out.println(Long.parseLong(campoCpf.getText()) + campoSenha.getText());
+			System.out.println(p.validaLogin(tro, Long.parseLong(campoCpf.getText()), campoSenha.getText()));
+			if(p.validaLogin( tro , Long.parseLong(campoCpf.getText()), campoSenha.getText())) {
+				new AreaLeitor(p.pegaLeitor(Long.parseLong(campoCpf.getText())), h).setVisible(true);
+				h.invisivel();
+				this.dispose();
+				
+			}else {
+				JOptionPane.showMessageDialog(null,
+						"Uma ou mais credenciais são invalidas", null,
+						JOptionPane.ERROR_MESSAGE);
+			}
 
 		} else {
-			;
+			if(p.validaLogin(tro, Long.parseLong(campoCpf.getText()), campoSenha.getText())) {
+				
+			}else {
+				JOptionPane.showMessageDialog(null,
+						"Uma ou mais credenciais são invalidas", null,
+						JOptionPane.ERROR_MESSAGE);
+			}
 		}
 	}
 

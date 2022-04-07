@@ -2,11 +2,17 @@ package view;
 
 import javax.swing.*;
 
+import model.Leitor;
+
 /**
  *
  * @author pablo
  */
 public class AreaLeitor extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JLabel app;
 	private JButton bBibli;
 	private JButton bCatalogo;
@@ -16,12 +22,16 @@ public class AreaLeitor extends JFrame {
 	private JPanel pInterno;
 	private JPanel pMae;
 	private JLabel texName;
+	private Leitor l;
+	private Home h;
 
 	/**
 	 * Creates new form AreaLeitor
 	 */
-	public AreaLeitor() {
+	public AreaLeitor(Leitor user, Home home) {
 		initComponents();
+		l = user;
+		h = home;
 	}
 
 	private void initComponents() {
@@ -139,49 +149,11 @@ public class AreaLeitor extends JFrame {
 	}
 
 	private void bSairActionPerformed(java.awt.event.ActionEvent evt) {
-		// TODO add your handling code here:
+		h.visivel();
+		this.dispose();
 	}
 
-	/**
-	 * @param args the command line arguments
-	 */
-	public static void main(String args[]) {
-		/* Set the Nimbus look and feel */
-		// <editor-fold defaultstate="collapsed" desc=" Look and feel setting code
-		// (optional) ">
-		/*
-		 * If Nimbus (introduced in Java SE 6) is not available, stay with the default
-		 * look and feel. For details see
-		 * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-		 */
-		try {
-			for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-				if ("Nimbus".equals(info.getName())) {
-					UIManager.setLookAndFeel(info.getClassName());
-					break;
-				}
-			}
-		} catch (ClassNotFoundException ex) {
-			java.util.logging.Logger.getLogger(AreaLeitor.class.getName()).log(java.util.logging.Level.SEVERE, null,
-					ex);
-		} catch (InstantiationException ex) {
-			java.util.logging.Logger.getLogger(AreaLeitor.class.getName()).log(java.util.logging.Level.SEVERE, null,
-					ex);
-		} catch (IllegalAccessException ex) {
-			java.util.logging.Logger.getLogger(AreaLeitor.class.getName()).log(java.util.logging.Level.SEVERE, null,
-					ex);
-		} catch (UnsupportedLookAndFeelException ex) {
-			java.util.logging.Logger.getLogger(AreaLeitor.class.getName()).log(java.util.logging.Level.SEVERE, null,
-					ex);
-		}
-		// </editor-fold>
-
-		/* Create and display the form */
-		java.awt.EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				new AreaLeitor().setVisible(true);
-			}
-		});
-	}
+	
+	
 
 }

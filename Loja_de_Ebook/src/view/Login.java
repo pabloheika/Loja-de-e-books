@@ -165,25 +165,22 @@ public class Login extends JFrame {
 
 	private void bEntraActionPerformed(java.awt.event.ActionEvent evt) {
 		if (tro) {
-			
-			if(p.validaLogin( tro , Long.parseLong(campoCpf.getText()), campoSenha.getText())) {
-				System.out.print( p.buscaLeitor(Long.parseLong(campoCpf.getText())).getDataNascimento());
-				new AreaLeitor(p.buscaLeitor(Long.parseLong(campoCpf.getText())), h).setVisible(true);
+
+			if (p.validaLogin(tro, Long.parseLong(campoCpf.getText()), campoSenha.getText())) {
+				new AreaLeitor(p.buscaLeitor(Long.parseLong(campoCpf.getText())), h, d).setVisible(true);
 				h.invisivel();
 				this.dispose();
-				
-			}else {
-				JOptionPane.showMessageDialog(null,
-						"Uma ou mais credenciais são invalidas", null,
+
+			} else {
+				JOptionPane.showMessageDialog(null, "Uma ou mais credenciais são invalidas", null,
 						JOptionPane.ERROR_MESSAGE);
 			}
 
 		} else {
-			if(p.validaLogin(tro, Long.parseLong(campoCpf.getText()), campoSenha.getText())) {
-				
-			}else {
-				JOptionPane.showMessageDialog(null,
-						"Uma ou mais credenciais são invalidas", null,
+			if (p.validaLogin(tro, Long.parseLong(campoCpf.getText()), campoSenha.getText())) {
+
+			} else {
+				JOptionPane.showMessageDialog(null, "Uma ou mais credenciais são invalidas", null,
 						JOptionPane.ERROR_MESSAGE);
 			}
 		}

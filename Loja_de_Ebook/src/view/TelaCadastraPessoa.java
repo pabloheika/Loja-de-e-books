@@ -345,15 +345,14 @@ public class TelaCadastraPessoa extends JFrame {
 		boolean res = false;
 		if (opera) {
 			if (dados.checaCpf(Long.parseLong(campoCpf.getText()), opera)) {
-				res = dados.cadastraPessoa(campoCpf.getText(), Long.parseLong(campoCpf.getText()), campoEmail.getText(),
-						campoSenha.getText(), campoData.getText(), opera);
+				res = dados.cadastraPessoa(campoName.getText(), Long.parseLong(campoCpf.getText()),
+						campoEmail.getText(), campoSenha.getText(), campoData.getText(), opera);
 			} else {
 				JOptionPane.showMessageDialog(null,
 						"Já exixte leitor com este CPF, e por causa disto o cadastro foi cancelado", null,
 						JOptionPane.ERROR_MESSAGE);
 			}
 		} else {
-//checar resultado obtido em senha e cargo
 			if (dados.checaCpf(Long.parseLong(campoCpf.getText()), opera)) {
 				res = dados.cadastraPessoa(campoCpf.getText(), Long.parseLong(campoCpf.getText()), campoEmail.getText(),
 						campoSenha.getText(), "" + selectCargo.getModel(), opera);

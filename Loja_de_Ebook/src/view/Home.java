@@ -50,12 +50,15 @@ public class Home implements ActionListener {
 		frame.setVisible(true); // deixa o JFrame visivel
 
 	}
+
 	public void invisivel() {
-		frame.setVisible(false); 
+		frame.setVisible(false);
 	}
+
 	public void visivel() {
-		frame.setVisible(true); 
+		frame.setVisible(true);
 	}
+
 	public void fechaCadastroPessoa() {
 
 		t.dispose();

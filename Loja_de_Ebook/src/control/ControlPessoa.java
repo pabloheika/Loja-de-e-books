@@ -30,39 +30,38 @@ public class ControlPessoa {
 
 		return s;
 	}
-	
+
 	public boolean validaLogin(boolean tipo, long cpf, String senha) {
-		if(tipo) {
+		if (tipo) {
 			for (int i = 0; i < l.size(); i++) {
-				if(l.get(i).getCpf() == cpf && senha.equals(l.get(i).getSenha())) {
+				if (l.get(i).getCpf() == cpf && senha.equals(l.get(i).getSenha())) {
 					return true;
 				}
 			}
-			
-		}else {
+
+		} else {
 			for (int i = 0; i < f.size(); i++) {
-				if(f.get(i).getCpf() == cpf && senha.equals(f.get(i).getSenha())) {
+				if (f.get(i).getCpf() == cpf && senha.equals(f.get(i).getSenha())) {
 					return true;
 				}
 			}
 		}
-		
+
 		return false;
 	}
-	public Leitor buscaLeitor(long cpf){
-		System.out.print("entrou" );
+
+	public Leitor buscaLeitor(long cpf) {
 		for (int i = 0; i < l.size(); i++) {
-			System.out.print("checando" );
-			if(l.get(i).getCpf() == cpf) {
-				System.out.print("Pegou" );
+			if (l.get(i).getCpf() == cpf) {
 				return l.get(i);
 			}
-		}System.out.print("foise" );
+		}
 		return l.get(0);
 	}
-	public Funcionario pegaFuncionario(long cpf){
+
+	public Funcionario pegaFuncionario(long cpf) {
 		for (int i = 0; i < f.size(); i++) {
-			if(f.get(i).getCpf() == cpf) {
+			if (f.get(i).getCpf() == cpf) {
 				return f.get(i);
 			}
 		}

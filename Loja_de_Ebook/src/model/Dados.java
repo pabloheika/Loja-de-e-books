@@ -170,7 +170,7 @@ public class Dados {
 		o1.setValor(2.5);
 		addObra(o1);
 
-		leitor1.setCpf(Long.parseLong("74509109008"));
+		leitor1.setCpf(Long.parseLong("123456"));
 		leitor1.setDataNascimento("12/01/1964");
 		leitor1.setEmail("Lucasmotta@gmail.com");
 		leitor1.setNome("Lucas Motta Pereira");
